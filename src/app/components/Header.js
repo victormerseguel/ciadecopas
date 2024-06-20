@@ -1,7 +1,6 @@
 "use client";
 import styles from "./Header.module.css";
 import Image from "next/image";
-import { Head } from "next/document";
 
 export const Header = () => {
   return (
