@@ -3,7 +3,7 @@ import Form from "./components/Form";
 import Friends from "./components/Friends";
 import Header from "./components/Header";
 
-const page = () => {
+const Contact = () => {
   return (
     <div>
       <Header />
@@ -15,4 +15,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

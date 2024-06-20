@@ -11,7 +11,7 @@ import Credits from "./components/Credits";
 import Sponsorship from "./components/Sponsorship";
 import Modal from "./components/Modal";
 
-const page = () => {
+const Show = () => {
   const params = useParams();
   const [show, setShow] = useState(null);
 
@@ -39,4 +39,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Show;

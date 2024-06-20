@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "./page.module.css";
 import { about, luciana, victor } from "@/app/db/about_db";
 
-const page = () => {
+const About = () => {
   return (
     <div className={style.wraper}>
       <Image
@@ -49,4 +49,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default About;
