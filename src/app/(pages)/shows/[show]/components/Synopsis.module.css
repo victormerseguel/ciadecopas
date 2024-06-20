@@ -1,0 +1,20 @@
+.synopsis_wraper img {
+  opacity: 50%;
+}
+
+.synopsis_wraper div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 50px 105px;
+
+  font-family: var(--font_inter);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--text_dark);
+}
+
+.synopsis_wraper p {
+  margin-bottom: 15px;
+}

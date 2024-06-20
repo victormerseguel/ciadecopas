@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 36px 100px;
+
+  background-color: #1f1d17;
+  color: var(--text_light);
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 50px;
+}
+
+.legal_text {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: var(--font_oswald);
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

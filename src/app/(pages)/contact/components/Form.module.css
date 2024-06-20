@@ -1,0 +1,59 @@
+.wraper {
+  width: 50%;
+
+  background-color: #d9d9d9;
+  color: var(--text_dark);
+  padding: 50px 30px 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: var(--font_inter);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wraper h4 {
+  font-family: var(--font_oswald);
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.wraper span {
+  color: rgb(149, 3, 3);
+}
+
+.wraper form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
+  width: 100%;
+  padding: 21px 20px 0;
+
+  text-align: left;
+}
+
+.wraper input,
+.wraper textarea {
+  width: 100%;
+  background-color: #ffffff73;
+  border: 0.5px solid var(--text_dark);
+  border-radius: 7px;
+
+  margin-top: 7px;
+}
+
+.wraper input {
+  height: 40px;
+}
+
+.wraper textarea {
+  height: 200px;
+}

@@ -1,7 +1,14 @@
-import { Inter } from "next/font/google";
+import { Inter, Oswald, Quicksand } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ variable: "--font_inter", subsets: ["latin"] });
+const oswald = Oswald({ variable: "--font_oswald", subsets: ["latin"] });
+const quicksand = Quicksand({
+  variable: "--font_quicksand",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.variable} ${oswald.variable} ${quicksand.variable}`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

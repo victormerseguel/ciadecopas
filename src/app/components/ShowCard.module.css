@@ -1,0 +1,26 @@
+.card_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  border-radius: 13px;
+
+  background-color: #f1efee;
+  box-shadow: #9c8f7b 0 4px 24px 8px;
+
+  cursor: pointer;
+}
+
+.card_wrap:hover {
+  background-color: #ffffff;
+}
+
+.card_wrap p {
+  font-family: var(--font_oswald);
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 16px 0;
+}

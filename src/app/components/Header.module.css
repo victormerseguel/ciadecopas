@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+
+  margin-top: -100px;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_content h2 {
+  font-family: var(--font_quicksand);
+  font-weight: 100;
+  font-size: 18pt;
+  text-align: center;
+  color: var(--text_dark);
+
+  margin-top: 60px;
+}
