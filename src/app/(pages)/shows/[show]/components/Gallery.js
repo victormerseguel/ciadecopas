@@ -12,6 +12,7 @@ const Gallery = ({ show }) => {
   const handlePhotoClick = ({ target }) => {
     setPhotoInd(target.id);
     setModal(true);
+    document.body.style.overflow = "hidden";
   };
 
   return (
@@ -41,14 +42,13 @@ const Gallery = ({ show }) => {
           <h3>Galeria</h3>
           <div className={style.gallery_imgs}>
             {showDB.gallery_imgs.map((img, ind) => (
-              <div className={style.photo}>
+              <div className={style.photo} key={img[0]}>
                 <Image
                   src={img[0]}
                   alt="Fotos"
                   fill
                   objectFit="cover"
                   sizes="200px"
-                  key={img[0]}
                   id={ind}
                   onClick={(e) => handlePhotoClick(e)}
                 />
@@ -70,7 +70,14 @@ const Gallery = ({ show }) => {
           </div>
         )}
       </div>
-      {modal && <Modal show={show} photo={photoInd} setModal={setModal} />}
+      {modal && (
+        <Modal
+          show={show}
+          photo={photoInd}
+          setPhotoInd={setPhotoInd}
+          setModal={setModal}
+        />
+      )}
     </div>
   );
 };

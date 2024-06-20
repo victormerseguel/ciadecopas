@@ -1,6 +1,5 @@
 [] - imagens galeria Meu Amigo Inventor
 [] - imagens galeria Pequena Magdalena
-[] - criar teaser Pequena Magdalena
 [] - imagem capa Hugo
 [] - imagem premios Hugo
 [] - imagens galeria Hugo
@@ -16,12 +15,14 @@
 [x] - Remover "agenda"
 [x] - validação formulario (caracteres e visual)
 [x] - css botão enviar
-[] - Regex Form
 [x] - animação surgimento menu shows
 [x] - criar modal galeria - animação lateral para parecer carrossel
-[] - modal - icone para fechar
-[] - modal - setas para mudar de foto
-[] - modal - sair com ESC
-[] - modal - stop scroll
+[x] - modal - icone para fechar
+[x] - modal - setas para mudar de foto
+[x] - modal - stop scroll
 
 [] - responsive
+
+[->] - Regex Form
+[->] - modal - sair com ESC
+[->] - criar teaser Pequena Magdalena

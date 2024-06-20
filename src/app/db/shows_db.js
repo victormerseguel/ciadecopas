@@ -37,15 +37,15 @@ A importância da brincadeira improvisada, de se viver experiências e não apen
     gallery_bg: "/assets/mai_gallery_bg.jpg",
     teaser_video: "https://player.vimeo.com/video/226771656?h=686baa124b",
     gallery_imgs: [
-      ["/assets/mai_photo_gallery_0.jpg", "horizontal"], //66,67%
-      ["/assets/mai_photo_gallery_1.jpg", "horizontal"],
-      ["/assets/mai_photo_gallery_2.jpg", "vertical"], //150%
-      ["/assets/mai_photo_gallery_3.jpg", "horizontal"],
-      ["/assets/mai_photo_gallery_4.jpg", "horizontal"],
-      ["/assets/mai_photo_gallery_5.jpg", "horizontal"],
-      ["/assets/mai_photo_gallery_6.jpg", "horizontal"],
-      ["/assets/mai_photo_gallery_7.jpg", "horizontal"],
-      ["/assets/mai_photo_gallery_8.jpg", "horizontal"],
+      ["/assets/mai_photo_gallery_0.jpg", "horizontal", "Author"],
+      ["/assets/mai_photo_gallery_1.jpg", "horizontal", "Author"],
+      ["/assets/mai_photo_gallery_2.jpg", "vertical", "Author"],
+      ["/assets/mai_photo_gallery_3.jpg", "horizontal", "Author"],
+      ["/assets/mai_photo_gallery_4.jpg", "horizontal", "Author"],
+      ["/assets/mai_photo_gallery_5.jpg", "horizontal", "Author"],
+      ["/assets/mai_photo_gallery_6.jpg", "horizontal", "Author"],
+      ["/assets/mai_photo_gallery_7.jpg", "horizontal", "Author"],
+      ["/assets/mai_photo_gallery_8.jpg", "horizontal", "Author"],
     ],
     interview_video:
       "https://www.youtube.com/embed/VuAK4lRkPKc?si=ebd-pillNAcKNpnb",

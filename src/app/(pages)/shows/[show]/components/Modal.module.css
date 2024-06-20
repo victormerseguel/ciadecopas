@@ -21,6 +21,24 @@
   color: var(--text_light);
 }
 
+.close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.content_wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.content_wraper svg {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
 .content {
   position: relative;
   width: 100vw;
@@ -39,4 +57,61 @@
 .horizontal {
   max-width: 80vw !important;
   height: calc(80vw * 0.667);
+}
+
+.previous {
+  rotate: 180deg;
+}
+
+.previous,
+.next,
+.close {
+  cursor: pointer;
+}
+
+/* Animation */
+
+.animaInPrevious {
+  opacity: 0;
+  transform: translateX(-150px);
+  animation: animaIn 0.3s ease forwards;
+}
+
+.animaInNext {
+  opacity: 0;
+  transform: translateX(150px);
+  animation: animaIn 0.3s ease forwards;
+}
+
+@keyframes animaIn {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+.animaOutNext {
+  opacity: 1;
+  transform: translateX(0);
+  animation: animaOutNext 0.3s ease forwards;
+}
+
+@keyframes animaOutNext {
+  to {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+}
+
+.animaOutPrevious {
+  opacity: 1;
+  transform: translateX(0);
+  animation: animaOutPrevious 0.3s ease forwards;
+}
+
+@keyframes animaOutPrevious {
+  to {
+    opacity: 0;
+    transform: translateX(150px);
+  }
 }
