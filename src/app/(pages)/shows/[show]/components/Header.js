@@ -17,6 +17,7 @@ const Header = ({ show }) => {
           objectFit="cover"
           objectPosition={showDB.cover_img[1]}
           className="background"
+          priority
         />
         {showDB.title_img && (
           <div
@@ -32,7 +33,7 @@ const Header = ({ show }) => {
               }}
               className={style.title_content}
             >
-              <Image src={showDB.title_img} fill />
+              <Image src={showDB.title_img} fill alt="title" priority />
             </div>
           </div>
         )}

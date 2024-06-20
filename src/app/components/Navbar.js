@@ -6,15 +6,20 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [shows, setShows] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   const handleShowsMenu = () => {
     setShows(true);
+    setAnimate(true);
   };
 
   const handleShowsHiden = () => {
     setTimeout(() => {
-      setShows(false);
+      setAnimate(false);
     }, 100);
+    setTimeout(() => {
+      setShows(false);
+    }, 400);
   };
 
   return (
@@ -35,13 +40,17 @@ const Navbar = () => {
             onMouseEnter={handleShowsMenu}
             onMouseLeave={handleShowsHiden}
           >
-            <Link href={"/shows"}>Espetáculos</Link>
+            <Link href={"#"}>Espetáculos</Link>
             {shows && (
-              <span className={style.shows}>
+              <span
+                className={`${style.shows} ${
+                  animate ? style.animaIn : style.animaOut
+                }`}
+              >
+                <Link href={"/shows/pequena-magdalena"}>Pequena Magdalena</Link>
                 <Link href={"/shows/meu-amigo-inventor"}>
                   Meu Amigo Inventor
                 </Link>
-                <Link href={"/shows/pequena-magdalena"}>Pequena Magdalena</Link>
                 <Link href={"/shows/hugo-os-imaginarios-e-a-cidade-do-medo"}>
                   Hugo, os Imaginários e a Cidade do Medo
                 </Link>

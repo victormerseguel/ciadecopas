@@ -62,6 +62,18 @@
   cursor: pointer;
 }
 
+.gallery_imgs img:hover {
+  opacity: 50%;
+}
+
+.photo {
+  position: relative;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
 .gallery_content button {
   margin-bottom: 80px;
 }

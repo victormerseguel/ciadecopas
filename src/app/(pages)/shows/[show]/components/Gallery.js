@@ -1,9 +1,18 @@
 import style from "./Gallery.module.css";
-import { shows_db } from "../db/shows_db";
+import { shows_db } from "../../../../db/shows_db";
 import Image from "next/image";
+import Modal from "./Modal";
+import { useState } from "react";
 
 const Gallery = ({ show }) => {
   const showDB = shows_db[+show];
+  const [photoInd, setPhotoInd] = useState();
+  const [modal, setModal] = useState(false);
+
+  const handlePhotoClick = ({ target }) => {
+    setPhotoInd(target.id);
+    setModal(true);
+  };
 
   return (
     <div style={{ position: "relative" }}>
@@ -31,8 +40,19 @@ const Gallery = ({ show }) => {
         <div className={style.gallery}>
           <h3>Galeria</h3>
           <div className={style.gallery_imgs}>
-            {showDB.gallery_imgs.map((img) => (
-              <Image src={img} alt="Fotos" width={200} height={200} key={img} />
+            {showDB.gallery_imgs.map((img, ind) => (
+              <div className={style.photo}>
+                <Image
+                  src={img[0]}
+                  alt="Fotos"
+                  fill
+                  objectFit="cover"
+                  sizes="200px"
+                  key={img[0]}
+                  id={ind}
+                  onClick={(e) => handlePhotoClick(e)}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -50,6 +70,7 @@ const Gallery = ({ show }) => {
           </div>
         )}
       </div>
+      {modal && <Modal show={show} photo={photoInd} setModal={setModal} />}
     </div>
   );
 };

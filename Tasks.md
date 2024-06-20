@@ -9,10 +9,19 @@
 [] - Imagens galeria A Menina
 [] - imagem ficha tecnica A Menina
 
-[] - Fundo menu
-[] - Sobre
+[x] - Fundo menu
+[x] - Sobre
 [x] - Contatos
 [x] - emailjs
-[] - Remover "agenda"
-[] - validação formulario (caracteres e visual)
-[] - css botão enviar
+[x] - Remover "agenda"
+[x] - validação formulario (caracteres e visual)
+[x] - css botão enviar
+[] - Regex Form
+[x] - animação surgimento menu shows
+[x] - criar modal galeria - animação lateral para parecer carrossel
+[] - modal - icone para fechar
+[] - modal - setas para mudar de foto
+[] - modal - sair com ESC
+[] - modal - stop scroll
+
+[] - responsive

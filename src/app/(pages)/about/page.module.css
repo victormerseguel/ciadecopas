@@ -1,0 +1,50 @@
+.wraper {
+  padding: 185px 40px;
+  margin-top: var(--margin_navbar);
+
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  color: var(--text_dark);
+}
+
+.content h3 {
+  font-family: var(--font_oswald);
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 60px;
+}
+
+.content p {
+  font-family: var(--font_inter);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.content p + p {
+  margin-top: 15px;
+}
+
+.artist h3 {
+  margin-top: 120px;
+}
+
+.luciana,
+.victor {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.victor {
+  margin-top: 60px;
+}

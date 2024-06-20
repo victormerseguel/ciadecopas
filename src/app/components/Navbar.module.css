@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(0deg, #d9d9d900 0%, #310f0fa1 100%);
-  height: 100px;
+  /* background-color: #310f0fa1; */
+  height: calc(var(--margin_navbar) * (-1));
   position: sticky;
   top: 0;
   z-index: 2;
@@ -40,6 +41,10 @@
   text-decoration: none;
 }
 
+.links a:hover {
+  opacity: 50%;
+}
+
 .shows_container .shows {
   display: flex;
   flex-direction: column;
@@ -58,8 +63,35 @@
 
 .shows a {
   margin: 10px 0;
+  text-shadow: 0 0 18px #322b2688, 0.5px 0 5px #322b2646, 0 0.5px 5px #322b2646;
 }
 
 .shows a:first-of-type {
   margin-top: 20px;
+}
+
+.animaIn {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: animaIn 0.3s ease forwards;
+}
+
+@keyframes animaIn {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+.animaOut {
+  opacity: 1;
+  transform: translateY(0);
+  animation: animaOut 0.3s ease forwards;
+}
+
+@keyframes animaOut {
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
 }

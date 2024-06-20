@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { shows_db } from "../db/shows_db";
+import { shows_db } from "../../../../db/shows_db";
 import style from "./Credits.module.css";
 import { Fragment } from "react";
 

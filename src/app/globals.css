@@ -5,6 +5,8 @@
 
   --text_dark: #404040;
   --text_light: #f2f2f2;
+
+  --margin_navbar: -90px;
 }
 
 .background {

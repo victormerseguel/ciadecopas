@@ -30,7 +30,7 @@
   margin-bottom: 8px;
 }
 
-.wraper p:last-child span {
+.name {
   text-transform: uppercase;
 }
 
@@ -46,4 +46,5 @@
   font-family: var(--font_quicksand);
   font-weight: 500;
   color: #fe7070;
+  text-transform: lowercase;
 }

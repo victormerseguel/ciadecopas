@@ -3,7 +3,7 @@
   width: 100vw;
   height: 80vh;
 
-  margin-top: -100px;
+  margin-top: var(--margin_navbar);
 
   display: flex;
   justify-content: center;

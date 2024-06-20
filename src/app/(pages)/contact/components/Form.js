@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./Form.module.css";
 import emailjs from "@emailjs/browser";
 
@@ -7,9 +7,16 @@ const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [nameEmpty, setNameEmpty] = useState(false);
+  const [emailEmpty, setEmailEmpty] = useState(false);
+  const [messageEmpty, setMessageEmpty] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    name === "" ? setNameEmpty(true) : setNameEmpty(false);
+    email === "" ? setEmailEmpty(true) : seEmaillEmpty(false);
+    message === "" ? setMessageEmpty(true) : seMessageEmpty(false);
 
     if (name === "" || email === "" || message === "") return;
 
@@ -39,6 +46,15 @@ const Form = () => {
       );
   };
 
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setNameEmpty(false);
+    setEmailEmpty(false);
+    setMessageEmpty(false);
+  };
+
   return (
     <div className={style.wraper}>
       <h4>ou mande-nos um e-mail</h4>
@@ -50,6 +66,10 @@ const Form = () => {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            className={nameEmpty ? style.empty : ""}
+            onBlur={() => {
+              name === "" ? setNameEmpty(true) : setNameEmpty(false);
+            }}
           />
         </label>
         <label>
@@ -58,6 +78,10 @@ const Form = () => {
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className={emailEmpty ? style.empty : ""}
+            onBlur={() => {
+              email === "" ? setEmailEmpty(true) : setEmailEmpty(false);
+            }}
           />
         </label>
         <label>
@@ -65,9 +89,18 @@ const Form = () => {
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            className={messageEmpty ? style.empty : ""}
+            onBlur={() => {
+              message === "" ? setMessageEmpty(true) : setMessageEmpty(false);
+            }}
           ></textarea>
         </label>
-        <button type="submit">Enviar</button>
+        <div className={style.buttons}>
+          <button type="submit">Enviar</button>
+          <button type="button" onClick={clearForm}>
+            Limpar
+          </button>
+        </div>
       </form>
     </div>
   );

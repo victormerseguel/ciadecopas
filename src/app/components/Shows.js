@@ -6,14 +6,14 @@ import Image from "next/image";
 const Shows = () => {
   const images = [
     {
-      name: "Meu Amigo Inventor",
-      src: "/assets/home_shows_0.png",
-      slug: "meu-amigo-inventor",
-    },
-    {
       name: "Pequena Magdalena",
       src: "/assets/home_shows_1.png",
       slug: "pequena-magdalena",
+    },
+    {
+      name: "Meu Amigo Inventor",
+      src: "/assets/home_shows_0.png",
+      slug: "meu-amigo-inventor",
     },
     {
       name: "Hugo, os Imaginários e a Cidade do Medo",
