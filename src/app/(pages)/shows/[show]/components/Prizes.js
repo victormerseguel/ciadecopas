@@ -17,7 +17,7 @@ const Prizes = ({ show }) => {
         alt="background"
         sizes="100vw"
       />
-      <div className={style.bg_filter}></div>
+      <div className={showDB.reviews ? style.bg_filter : ""}></div>
       <div className={style.prizes}>
         {showDB.prizes &&
           showDB.prizes.map((prize) => (
@@ -31,12 +31,13 @@ const Prizes = ({ show }) => {
           ))}
       </div>
       <div className={style.reviews}>
-        {showDB.reviews.map((review) => (
-          <div key={review.text}>
-            <p className={style.text}>{review.text}</p>
-            <p className={style.author}>{review.author}</p>
-          </div>
-        ))}
+        {showDB.reviews &&
+          showDB.reviews.map((review) => (
+            <div key={review.text}>
+              <p className={style.text}>{review.text}</p>
+              <p className={style.author}>{review.author}</p>
+            </div>
+          ))}
       </div>
     </div>
   );

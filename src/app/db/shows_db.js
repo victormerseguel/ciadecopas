@@ -145,7 +145,7 @@ Em Pequena Magdalena, Frida é visitada pela Companhia de Copas em sua infância
   // HUGO, OS IMAGINÁRIOS E A CIDADE DO MEDO -------------------------------
   {
     id: "hugo-os-imaginarios-e-a-cidade-do-medo",
-    cover_img: ["/assets/hicm_header_bg.jpg", "center"],
+    cover_img: ["/assets/hicm_header_bg.png", "center"],
     title_img: "",
     title_dimensions: [],
     synopsis_bg: "/assets/hicm_synopsis_bg.jpg",
@@ -158,11 +158,89 @@ Nesta montagem a narrativa e todo um estudo acerca da linguagem, ganham destaque
 Temas complementares como a relação entre a infância e a velhice e a descoberta do novo, por exemplo, compõem o espetáculo e dão vida a personagens fantásticos.`,
     prizes_bg: "/assets/hicm_prizes_bg.jpg",
     prizes: ["/assets/hicm_prize_0.png"],
-    reviews: [],
+    reviews: "",
     gallery_bg: "/assets/hicm_gallery_bg.jpg",
     teaser_video: "",
-    gallery_imgs: [],
-    interview_video: "",
+    gallery_imgs: [
+      ["/assets/hicm_photo_gallery_0.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_1.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_2.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_3.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_4.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_5.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_6.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_7.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_8.jpg", "horizontal", "Foto: André Gimaiel"],
+      ["/assets/hicm_photo_gallery_9.jpg", "horizontal", "Foto: André Gimaiel"],
+      [
+        "/assets/hicm_photo_gallery_10.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_11.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+
+      [
+        "/assets/hicm_photo_gallery_13.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_14.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_15.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_16.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_17.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_18.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_19.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_20.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_21.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_22.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+      [
+        "/assets/hicm_photo_gallery_23.jpg",
+        "horizontal",
+        "Foto: André Gimaiel",
+      ],
+    ],
+    interview_video:
+      "https://www.youtube.com/embed/oReFVJnHKFg?si=UkWrQl9XkmN5jLPh",
     credits_bg: "/assets/hicm_credits_bg.jpg",
     credits: [
       ["DRAMATURGIA:", "Celso Correia Lopes e Companhia de Copas"],

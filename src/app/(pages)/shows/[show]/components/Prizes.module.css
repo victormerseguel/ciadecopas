@@ -1,3 +1,7 @@
+.prizes_wraper {
+  min-height: 700px;
+}
+
 .bg_filter {
   width: 100%;
   height: 100% !important;
