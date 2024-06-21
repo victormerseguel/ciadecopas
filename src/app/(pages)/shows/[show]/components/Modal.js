@@ -67,6 +67,7 @@ const Modal = ({ show, photo, setPhotoInd, setModal }) => {
             alt="Photo"
             onClick={(e) => e.stopPropagation()}
             className={`${next}`}
+            sizes="80vw"
           />
         </div>
         <Image

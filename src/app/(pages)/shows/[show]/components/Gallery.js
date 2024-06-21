@@ -23,6 +23,7 @@ const Gallery = ({ show }) => {
         alt="background"
         className="background"
         objectFit="cover"
+        sizes="100vw"
       />
       <div className={style.gallery_content}>
         {showDB.teaser_video && (

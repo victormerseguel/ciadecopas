@@ -11,6 +11,7 @@ const About = () => {
         objectFit="cover"
         alt="background"
         className="background"
+        sizes="100vw"
       />
       <div className={style.content}>
         <div className={style.cia}>

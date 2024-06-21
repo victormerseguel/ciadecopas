@@ -15,6 +15,7 @@ const Prizes = ({ show }) => {
         objectPosition="center"
         className="background"
         alt="background"
+        sizes="100vw"
       />
       <div className={style.bg_filter}></div>
       <div className={style.prizes}>

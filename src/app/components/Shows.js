@@ -34,6 +34,7 @@ const Shows = () => {
         fill
         alt="background"
         className="background"
+        sizes="100vw"
       />
       <h3>Espetáculos</h3>
       <div className={style.cards}>

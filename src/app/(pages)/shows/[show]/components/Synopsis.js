@@ -13,6 +13,7 @@ const Synopsis = ({ show }) => {
         objectFit="cover"
         objectPosition="center"
         className={`background ${style.image}`}
+        sizes="100vw"
       />
       <div>
         {showDB.synopsis_text.split("\n").map((p) => (

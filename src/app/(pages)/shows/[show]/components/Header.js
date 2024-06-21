@@ -17,6 +17,7 @@ const Header = ({ show }) => {
           objectFit="cover"
           objectPosition={showDB.cover_img[1]}
           className="background"
+          sizes="100vw"
           priority
         />
         {showDB.title_img && (

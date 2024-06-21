@@ -15,6 +15,7 @@ const Sponsorship = ({ show }) => {
             objectFit="cover"
             alt="background"
             className={`background ${style.background}`}
+            sizes="100vw"
           />
           <div className={style.sponsor_content}>
             {showDB.sponsorship_img && (
