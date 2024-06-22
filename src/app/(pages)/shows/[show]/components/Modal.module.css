@@ -29,9 +29,12 @@
 
 .content_wraper {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
+
+  padding: 30px;
 }
 
 .content_wraper svg {

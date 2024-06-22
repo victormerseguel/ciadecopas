@@ -56,7 +56,7 @@ const Modal = ({ show, photo, setPhotoInd, setModal }) => {
         />
         <div
           className={`${style.content} ${
-            showDB.gallery_imgs[1] === "vertical"
+            showDB.gallery_imgs[photo][1] === "vertical"
               ? style.vertical
               : style.horizontal
           }`}
