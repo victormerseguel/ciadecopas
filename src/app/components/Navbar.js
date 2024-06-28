@@ -7,6 +7,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [shows, setShows] = useState(false);
   const [animate, setAnimate] = useState(false);
+  const [menuMobile, setMenuMobile] = useState(false);
 
   const handleShowsMenu = () => {
     setShows(true);
@@ -22,6 +23,8 @@ const Navbar = () => {
     }, 400);
   };
 
+  const handleMenuMobile = () => {};
+
   return (
     <div className={style.wraper}>
       <nav className={style.nav}>
@@ -30,9 +33,10 @@ const Navbar = () => {
             src={"/assets/navbar_logo.png"}
             width={160}
             height={160 * 0.215}
+            alt="Companhia de Copas - Logo"
           />
         </Link>
-        <div className={style.links}>
+        <div className={`${style.links} ${style.desktop}`}>
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>Sobre</Link>
           <span
@@ -62,6 +66,13 @@ const Navbar = () => {
           </span>
           {/* <Link href={"/schedule"}>Agenda</Link> */}
           <Link href={"/contact"}>Contato</Link>
+        </div>
+        <div className={style.mobile}>
+          <img
+            src={"/assets/icon_menu.svg"}
+            alt="menu"
+            onClick={handleMenuMobile}
+          />
         </div>
       </nav>
     </div>

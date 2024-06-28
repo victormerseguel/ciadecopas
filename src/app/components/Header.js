@@ -11,6 +11,7 @@ export const Header = () => {
         sizes="100vw"
         objectFit="cover"
         className="background"
+        alt="background"
       />
       <div className={styles.header_content}>
         <Image
@@ -21,7 +22,7 @@ export const Header = () => {
         />
         <h2>
           Os olhares sobre o ser humano e sua evolução <br />
-          São o que nos interessa, o que nos faz criar.
+          são o que nos interessa, o que nos faz criar.
         </h2>
       </div>
     </header>
