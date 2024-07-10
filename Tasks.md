@@ -1,12 +1,12 @@
-[] - imagens galeria Meu Amigo Inventor
-[] - imagens galeria Pequena Magdalena
+[x] - imagens galeria Meu Amigo Inventor
+[x] - imagens galeria Pequena Magdalena
 [] - imagem capa Hugo
 [x] - imagem premios Hugo
 [x] - imagens galeria Hugo
 [x] - imagem ficha tecnica Hugo
-[] - imagem premios A Menina
-[] - Imagens galeria A Menina
-[] - imagem ficha tecnica A Menina
+[x] - imagem premios A Menina
+[x] - Imagens galeria A Menina
+[x] - imagem ficha tecnica A Menina
 
 [x] - Fundo menu
 [x] - Sobre
