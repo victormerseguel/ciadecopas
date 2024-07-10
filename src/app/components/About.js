@@ -31,8 +31,7 @@ const About = () => {
           fill
           alt="Victor e Luciana da Companhia de Copas"
           sizes="50vw"
-          objectFit="cover"
-          objectPosition="top"
+          style={{ objectFit: "cover", objectPosition: "top" }}
           className="background"
         />
       </div>

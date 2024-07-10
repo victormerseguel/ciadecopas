@@ -8,7 +8,7 @@ const About = () => {
       <Image
         src={"/assets/about_bg.jpg"}
         fill
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
         alt="background"
         className="background"
         sizes="100vw"

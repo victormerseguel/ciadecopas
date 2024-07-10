@@ -14,11 +14,11 @@ const Header = ({ show }) => {
         <Image
           src={showDB.cover_img[0]}
           fill
-          objectFit="cover"
-          objectPosition={showDB.cover_img[1]}
+          style={{ objectFit: "cover", objectPosition: showDB.cover_img[1] }}
           className="background"
           sizes="100vw"
           priority
+          alt="background"
         />
         {showDB.title_img && (
           <div
@@ -34,7 +34,13 @@ const Header = ({ show }) => {
               }}
               className={style.title_content}
             >
-              <Image src={showDB.title_img} fill alt="title" priority />
+              <Image
+                src={showDB.title_img}
+                fill
+                alt="title"
+                priority
+                sizes="100%"
+              />
             </div>
           </div>
         )}

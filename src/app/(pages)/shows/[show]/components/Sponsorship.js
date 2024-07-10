@@ -12,7 +12,7 @@ const Sponsorship = ({ show }) => {
           <Image
             src={showDB.synopsis_bg}
             fill
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             alt="background"
             className={`background ${style.background}`}
             sizes="100vw"
@@ -29,6 +29,7 @@ const Sponsorship = ({ show }) => {
                       height={sponsor[1] * sponsor[2]}
                       quality={100}
                       key={ind}
+                      alt="patrocínio"
                     />
                   ))}
                 </div>
@@ -45,6 +46,7 @@ const Sponsorship = ({ show }) => {
                       height={partner[1] * partner[2]}
                       quality={100}
                       key={ind}
+                      alt="apoio"
                     />
                   ))}
                 </div>

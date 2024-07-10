@@ -9,7 +9,7 @@ export const Header = () => {
         src="/assets/home_header_bg.jpg"
         fill
         sizes="100vw"
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
         className="background"
         alt="background"
       />

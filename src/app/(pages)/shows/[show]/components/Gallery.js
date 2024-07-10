@@ -22,7 +22,7 @@ const Gallery = ({ show }) => {
         fill
         alt="background"
         className="background"
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
         sizes="100vw"
       />
       <div className={style.gallery_content}>
@@ -48,7 +48,7 @@ const Gallery = ({ show }) => {
                   src={img[0]}
                   alt="Fotos"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
                   sizes="200px"
                   id={ind}
                   onClick={(e) => handlePhotoClick(e)}

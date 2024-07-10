@@ -11,8 +11,7 @@ const Prizes = ({ show }) => {
       <Image
         src={showDB.prizes_bg}
         fill
-        objectFit="cover"
-        objectPosition="center"
+        style={{ objectFit: "cover", objectPosition: "center" }}
         className="background"
         alt="background"
         sizes="100vw"

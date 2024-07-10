@@ -8,7 +8,7 @@ const Header = () => {
         src={"/assets/contacts_header_bg.jpg"}
         fill
         className="background"
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
         alt="background"
       />
       <div className={style.content}>

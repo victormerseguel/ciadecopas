@@ -10,10 +10,10 @@ const Synopsis = ({ show }) => {
       <Image
         src={showDB.synopsis_bg}
         fill
-        objectFit="cover"
-        objectPosition="center"
+        style={{ objectFit: "cover", objectPosition: "center" }}
         className={`background ${style.image}`}
         sizes="100vw"
+        alt="background"
       />
       <div>
         {showDB.synopsis_text.split("\n").map((p) => (

@@ -24,3 +24,14 @@
   text-transform: uppercase;
   padding: 16px 0;
 }
+
+@media (max-width: 440px) {
+  .card_wrap img {
+    width: 90vw;
+    height: calc(90vw * 0.496);
+  }
+
+  .card_wrap p {
+    font-size: 1rem;
+  }
+}
