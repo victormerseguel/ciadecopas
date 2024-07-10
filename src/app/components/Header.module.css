@@ -25,4 +25,11 @@
   color: var(--text_dark);
 
   margin-top: 60px;
+  padding: 0 40px;
+}
+
+@media (max-width: 840px) {
+  .header_content h2 {
+    font-size: 14pt;
+  }
 }

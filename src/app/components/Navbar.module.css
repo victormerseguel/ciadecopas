@@ -92,3 +92,22 @@
     transform: translateY(-30px);
   }
 }
+
+.mobile {
+  display: none;
+  fill: #fff;
+}
+
+@media (max-width: 840px) {
+  .nav {
+    padding: 0 40px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
