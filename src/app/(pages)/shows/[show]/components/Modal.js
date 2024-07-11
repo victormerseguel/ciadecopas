@@ -66,7 +66,6 @@ const Modal = ({ show, photo, setPhotoInd, setModal }) => {
             fill
             alt="Photo"
             onClick={(e) => e.stopPropagation()}
-            className={`${next}`}
             sizes="80vw"
           />
         </div>
@@ -78,6 +77,13 @@ const Modal = ({ show, photo, setPhotoInd, setModal }) => {
           className={style.next}
           onClick={(e) => handleNext(e)}
         />
+      </div>
+      <div className={style.mobile_navigation}>
+        <div
+          className={style.mobile_previous}
+          onClick={(e) => handlePrevious(e)}
+        ></div>
+        <div className={style.mobile_next} onClick={(e) => handleNext(e)}></div>
       </div>
       <p>{showDB.gallery_imgs[photo][2]}</p>
     </div>
