@@ -48,3 +48,14 @@
   color: #fe7070;
   text-transform: lowercase;
 }
+
+@media (max-width: 768px) {
+  .wraper {
+    width: 100%;
+    padding: 50px 10px;
+  }
+
+  .location {
+    font-size: 13px;
+  }
+}

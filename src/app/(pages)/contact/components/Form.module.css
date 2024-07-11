@@ -95,3 +95,14 @@
 .empty {
   border: 1px solid #b60505 !important;
 }
+
+@media (max-width: 768px) {
+  .wraper {
+    width: 100%;
+    padding: 50px 10px;
+  }
+
+  .wraper form {
+    padding: 21px 10px 0;
+  }
+}

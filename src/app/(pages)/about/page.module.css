@@ -29,12 +29,21 @@
   line-height: 150%;
 }
 
-.content p + p {
+.content p + p,
+.content h4 + p {
   margin-top: 15px;
 }
 
 .artist h3 {
   margin-top: 120px;
+}
+
+.artist h4 {
+  font-family: var(--font_oswald);
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .luciana,
@@ -47,4 +56,14 @@
 
 .victor {
   margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .luciana {
+    flex-direction: column;
+  }
+
+  .victor {
+    flex-direction: column-reverse;
+  }
 }

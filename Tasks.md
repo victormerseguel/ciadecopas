@@ -21,7 +21,7 @@
 [x] - modal - setas para mudar de foto
 [x] - modal - stop scroll
 
-[] - responsive
+[x] - responsive
 
 [->] - Regex Form
 [->] - modal - sair com ESC

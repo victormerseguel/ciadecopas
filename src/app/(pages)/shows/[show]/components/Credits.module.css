@@ -45,3 +45,10 @@
 .artist {
   font-weight: 500;
 }
+
+@media (max-width: 500px) {
+  .function,
+  .artist {
+    font-size: 14px;
+  }
+}

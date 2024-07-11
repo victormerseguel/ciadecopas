@@ -17,7 +17,7 @@ const Friends = () => {
           @<span>ciadecopas</span>
         </p>
       </div>
-      <p>
+      <p className={style.location}>
         A <span className={style.name}>Companhia de Copas</span> está situada em
         Cascais, Portugal.
       </p>

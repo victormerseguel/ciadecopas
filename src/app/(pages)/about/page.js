@@ -32,10 +32,16 @@ const About = () => {
               alt="Luciana Castellano"
               quality={90}
             />
-            <p>{luciana}</p>
+            <div>
+              <h4>Luciana</h4>
+              <p>{luciana}</p>
+            </div>
           </div>
           <div className={style.victor}>
-            <p>{victor}</p>
+            <div>
+              <h4>Victor</h4>
+              <p>{victor}</p>
+            </div>
             <Image
               src={"/assets/about_victor.png"}
               width={250}
