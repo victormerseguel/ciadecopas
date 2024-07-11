@@ -24,6 +24,13 @@ const Navbar = () => {
     }, 400);
   };
 
+  const handleShowSelected = () => {
+    setAnimate(false);
+    setTimeout(() => {
+      setShows(false);
+    }, 300);
+  };
+
   const handleMenuMobile = () => {
     setMobile(true);
     console.log("clicou");
@@ -55,14 +62,28 @@ const Navbar = () => {
                   animate ? style.animaIn : style.animaOut
                 }`}
               >
-                <Link href={"/shows/pequena-magdalena"}>Pequena Magdalena</Link>
-                <Link href={"/shows/meu-amigo-inventor"}>
+                <Link
+                  href={"/shows/pequena-magdalena"}
+                  onClick={handleShowSelected}
+                >
+                  Pequena Magdalena
+                </Link>
+                <Link
+                  href={"/shows/meu-amigo-inventor"}
+                  onClick={handleShowSelected}
+                >
                   Meu Amigo Inventor
                 </Link>
-                <Link href={"/shows/hugo-os-imaginarios-e-a-cidade-do-medo"}>
+                <Link
+                  href={"/shows/hugo-os-imaginarios-e-a-cidade-do-medo"}
+                  onClick={handleShowSelected}
+                >
                   Hugo, os Imaginários e a Cidade do Medo
                 </Link>
-                <Link href={"/shows/a-menina-do-lenco-rosa"}>
+                <Link
+                  href={"/shows/a-menina-do-lenco-rosa"}
+                  onClick={handleShowSelected}
+                >
                   A Menina do Lenço Rosa
                 </Link>
               </span>

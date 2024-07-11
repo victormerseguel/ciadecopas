@@ -27,7 +27,7 @@
 [->] - modal - sair com ESC
 [->] - criar teaser Pequena Magdalena
 
-[] - criar menu mobile
-[] - criar menu mobile shows
-[] - recolher menu shows quando selecionar um espetáculo
+[x] - criar menu mobile
+[x] - criar menu mobile shows
+[x] - recolher menu shows quando selecionar um espetáculo
 [] - galeria responsiva
