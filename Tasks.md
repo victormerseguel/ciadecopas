@@ -31,4 +31,4 @@
 [x] - criar menu mobile shows
 [x] - recolher menu shows quando selecionar um espetáculo
 [x] - galeria responsiva
-[] - redimensionar fotos amlr
+[x] - redimensionar fotos amlr
