@@ -2,12 +2,13 @@
 import Image from "next/image";
 import style from "./Navbar.module.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { Context } from "../hooks/Context";
 
 const Navbar = () => {
   const [shows, setShows] = useState(false);
   const [animate, setAnimate] = useState(false);
-  const [menuMobile, setMenuMobile] = useState(false);
+  const { setMobile } = useContext(Context);
 
   const handleShowsMenu = () => {
     setShows(true);
@@ -23,7 +24,10 @@ const Navbar = () => {
     }, 400);
   };
 
-  const handleMenuMobile = () => {};
+  const handleMenuMobile = () => {
+    setMobile(true);
+    console.log("clicou");
+  };
 
   return (
     <div className={style.wraper}>

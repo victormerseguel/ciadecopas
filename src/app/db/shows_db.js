@@ -288,7 +288,7 @@ Temas complementares como a relação entre a infância e a velhice e a descober
     partnership_img: "",
   },
 
-  // HUGO, OS IMAGINÁRIOS E A CIDADE DO MEDO -------------------------------
+  // A MENINA DO LENÇO ROSA ------------------------------------------------
   {
     id: "a-menina-do-lenco-rosa",
     cover_img: ["/assets/amlr_header_bg.png", "center"],

@@ -30,3 +30,4 @@
 [] - criar menu mobile
 [] - criar menu mobile shows
 [] - recolher menu shows quando selecionar um espetáculo
+[] - galeria responsiva

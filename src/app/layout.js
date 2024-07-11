@@ -2,6 +2,9 @@ import { Inter, Oswald, Quicksand } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { ContaxtProvier } from "./hooks/Context";
+import MenuMobile from "./components/MenuMobile";
+import MenuMobileShows from "./components/MenuMobileShows";
 
 const inter = Inter({ variable: "--font_inter", subsets: ["latin"] });
 const oswald = Oswald({ variable: "--font_oswald", subsets: ["latin"] });
@@ -24,9 +27,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${oswald.variable} ${quicksand.variable}`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ContaxtProvier>
+          <Navbar />
+          {children}
+          <Footer />
+          <MenuMobile />
+          <MenuMobileShows />
+        </ContaxtProvier>
       </body>
     </html>
   );
